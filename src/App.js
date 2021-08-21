@@ -8,12 +8,16 @@ import {
   Route
 } from "react-router-dom";
 
+impo
+
 class App extends React.Component {
 
   render() {
     console.log('app', this.props);
     return(
       <>
+
+      <h1>Auth0</h1>
         <Router>
           <IsLoadingAndError>
             <Header />
