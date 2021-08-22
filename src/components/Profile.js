@@ -4,7 +4,20 @@ import { withAuth0 } from '@auth0/auth0-react';
 class Profile extends Component {
   render() {
     const { user } = this.props.auth0;
-    return <div>Hello {user.name}</div>;
+
+    return (
+
+      <>
+      
+       
+      <div>Hello {user.name}</div>
+      <div>email {user.email}</div>
+      <img src ={user.picture} alt='userName' />
+  
+   
+      </>
+    )
+   
   }
 }
 
